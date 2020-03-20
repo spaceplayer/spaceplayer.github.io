@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="xinzhi">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>FM算法汇总 - 新志小站</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">新志小站</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../index.html">新志的个人小站</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">算法与数据结构 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">算法</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../xxx">动态规划</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">题目</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../算法/LeetCode题目总结.html">LeetCode题目总结</a>
+</li>
+            
+<li >
+    <a href="../算法/剑指offer.html">剑指offer</a>
+</li>
+            
+<li >
+    <a href="../算法/面试题总结.html">面试题总结</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">推荐系统 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="FM算法汇总.html">FM算法汇总</a>
+</li>
+                                    
+<li >
+    <a href="深度学习召回模型.html">深度学习召回模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">自然语言处理 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../自然语言处理/BERT及ERNIE学习.html">预处理模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">机器学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">深度学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">强化学习</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">语言学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">C++</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/CPP笔记.html">C++笔记</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Python</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/Python笔记.html">Python笔记</a>
+</li>
+            
+<li >
+    <a href="../语言/Python高效编程.md">Python高效编程</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">设计模式</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/设计模式.html">设计模式</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../语言/多进程多线程.html">多进程多线程</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">常用工具 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../工具/如何构建自己的博客.html">如何构建自己的博客</a>
+</li>
+                                    
+<li >
+    <a href="../工具/常用Linux命令.html">常用Linux命令</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">读书笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../读书笔记/论美国的民主.md">论美国的民主</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">随笔记事</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">年度计划</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../算法/面试题总结.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="深度学习召回模型.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/spaceplayer/mkdocs_blog/blob/mkdocs_blog/docs/推荐系统/FM算法汇总.md">Edit on spaceplayer/mkdocs_blog</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#fm">FM算法汇总</a></li>
+            <li><a href="#one-hot">one-hot 局限</a></li>
+            <li><a href="#fm_1">FM</a></li>
+            <li><a href="#ffm">FFM</a></li>
+            <li><a href="#deepfm">DeepFM</a></li>
+            <li><a href="#deepffm">DeepFFM</a></li>
+            <li><a href="#nffmrank6">NFFM（腾讯算法大赛rank6）</a></li>
+            <li><a href="#fm_2">FM 实现</a></li>
+            <li><a href="#deep-fm">Deep FM</a></li>
+            <li><a href="#nfm">NFM</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="fm">FM算法汇总</h2>
+<h3 id="one-hot">one-hot 局限</h3>
+<p>category 特征需要进行 one-hot 处理，引起两个问题：</p>
+<ul>
+<li>稀疏</li>
+<li>特征空间变得巨大</li>
+</ul>
+<h3 id="fm_1">FM</h3>
+<ul>
+<li>
+<p>因式分解机(fm)结合了SVM和因式分解模型二者的优势</p>
+</li>
+<li>
+<p>相比SVM的二阶多项式核而言，FM在样本稀疏的情况下是有优势的；而且，FM的训练/预测复杂度是线性的，而二项多项式核SVM需要计算核矩阵，核矩阵复杂度就是N平方。</p>
+</li>
+<li>FM可以像SVM一样处理real value 特征，二者FM还可以处理稀疏的数据，而这里SVM却 是失败了的，FM处理稀疏数据主要机制是：因式分解参数可以对任何两个特征直接做组合。</li>
+<li>
+<p>FFM二次项并不能够化简，其预测复杂度是 O(kn2)O(kn2)。</p>
+</li>
+<li>
+<p>组合特征数量 $\frac{n(n-1)}{2}$，由于one-hot导致的高稀疏导致同时两个特征为1的数量极低，难以通过训练学习$w_{ij}$</p>
+</li>
+<li>
+<p>为了求出$ω_{ij}$，我们对每一个特征分量$x_{i}$引入辅助向量Vi=(vi1,vi2,⋯,vik)。然后，利用$v_iv_j^T$对$ω_{ij}$进行求解</p>
+</li>
+</ul>
+<p><img alt="image-20181114164847617" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/Library/Application Support/typora-user-images/image-20181114164847617.png" /></p>
+<ul>
+<li>要求出$<v_i,v_j>$，主要是采用了如公式$((a+b+c)^2−a^2−b^2−c^2$求出交叉项。具体过程如下</li>
+</ul>
+<p>$\hat{y} = w_0 + \sum_1^nw_ix_i + \sum_{i=1}^n\sum_{j=i+1}^nw_{ij}x_ix_j$</p>
+<p>$\hat{y} = w_0 + \sum_1^nw_ix_i + \sum_{i=1}^n\sum_{j=i+1}^n<v_i, v_j>x_ix_j$</p>
+<p>$\hat{y} = w_0 + \sum_1^nw_ix_i + \sum_i^n\sum_{j=i+1}^n<v_i, v_j>x_ix_jI{x_ix_j \in{keep_set}}$</p>
+<p>n代表样本总数量</p>
+<p>$w_0 $和$w_i$均为该公式线性部分（前两项）的权重因子</p>
+<p>$<v_i, v_j>$代表的组合特征的权重因子，由$v_i$和$v_j$的点积求得</p>
+<p>$\hat{y}$代表预测的结果</p>
+<p>$x_i$代表输入样本的各个特征</p>
+<p>$x_ix_j $代表组合特征</p>
+<p>$I{x_ix_j \in{keep_set}}$是示性函数，当大括号内部为''真''时，返回结果为1，否则返回0</p>
+<p>keep_set 代表通过逐步回归筛选过后的组合特征子集</p>
+<p><img alt="image-20181114171908492" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/Library/Application Support/typora-user-images/image-20181114171908492.png" /><img alt="image-20181114174110542" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/Library/Application Support/typora-user-images/image-20181114174110542.png" /></p>
+<p><img alt="image-20181114180045862" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/Library/Application Support/typora-user-images/image-20181114180045862.png" /></p>
+<p><img alt="image-20181114180543011" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/Library/Application Support/typora-user-images/image-20181114180543011.png" /></p>
+<h3 id="ffm">FFM</h3>
+<p>乍一看FFM的embedding方法似乎速度要比FM的embedding方法慢一个量级，但是在gpu的计算环境下，利用并行化的思想，可以将FFM的embedding方法的计算时间优化到与FM的embedding方法几乎一样。只是embedding矩阵的空间复杂度是没有办法再优化了</p>
+<h3 id="deepfm">DeepFM</h3>
+<p>https://zhuanlan.zhihu.com/p/38443751</p>
+<h3 id="deepffm">DeepFFM</h3>
+<h3 id="nffmrank6">NFFM（腾讯算法大赛rank6）</h3>
+<p>https://zhuanlan.zhihu.com/p/38443751</p>
+<p>deepffm是浅层部分为ffm，深度部分是embedding后的向量拼接成一个向量作为全连接层的输入。而nffm则是浅层部分是LR，深度部分是特征交叉后的向量作为全连接层的输入。</p>
+<h3 id="fm_2">FM 实现</h3>
+<h4 id="csr">csr稀疏表示</h4>
+<p><img alt="image-20181114181903396" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/20181114181903396.png" /></p>
+<h3 id="deep-fm">Deep FM</h3>
+<ul>
+<li>
+<p>FM 实际上因为计算复杂度的原因一般都只用到了二阶特征组合 高阶组合使用DNN</p>
+</li>
+<li>
+<p>DeepFM是一个集成了FM和DNN的神经网络框架，思路和Google的Wide&amp;Deep相似，都包括wide和deep两部分。W&amp;D模型的wide部分是广义线性模型，DeepFM的wide部分则是FM模型，两者的deep部分都是深度神经网络。DeepFM神经网络部分，隐含层的激活函数用ReLu和Tanh做信号非线性映射，Sigmoid函数做CTR预估的输出函数。</p>
+</li>
+</ul>
+<p><img alt="image-20181116145552340" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116145552340.png" /></p>
+<p>#### <strong>相关工作</strong></p>
+<p><strong>FTRL算法</strong>（McMahan et al. 2013），generalized linear model虽然简单，但实践中很有效果。但这类线性模型难以学习组合特征，一般需要手动构建特征向量，难以处理高阶组合或者没有出现在训练数据中的组合。</p>
+<p><strong>Factorization Machine模型</strong>（Rendle
+  2010），对特征之间进行向量内积，实现特征们的逐对组合pairwise interactions。理论上FM可以对高阶特征组合建模，但实践中只用order-2特征因为其高复杂度。</p>
+<p><strong>DNN</strong>在特征表示学习中很有效果，可以用来学习组合特征。（Liu et al., 2015）和（Zhang et al., 2014）扩展CNN和RNN用于CTR预估，但CNN-based模型对领域特征有偏biased，RNN-based模型适合用在有时序依赖的点击数据。Factorization-machine supported Neural Network（<strong>FNN</strong>）（Zhang et al., 2016），在使用DNN前预训练FM，因此限制了FM的能力。Product-based Neural
+  Network（<strong>PNN</strong>）（Qu et al., 2016）在DNN的embedding层和全连接层之间引入product层，来研究feature interactions。</p>
+<p><strong>Wide &amp; Deep模型</strong>(Cheng
+  et al., 2016)认为，PNN/FNN和其他Deep模型提取很少low-order的feature interactions，提出的W&amp;D模型可以同时对low-order和high-order建模，但要对wide和deep部分模型分别输入，其中wide部分还需要人工特征工程。</p>
+<p><img alt="image-20181116150521120" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116150521120.png" /></p>
+<p><img alt="image-20181116150728529" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116150728529.png" /></p>
+<p><img alt="image-20181116151041665" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116151041665.png" /></p>
+<p><img alt="image-20181116151132106" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116151132106.png" /></p>
+<p><img alt="image-20181116153003697" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20181116153003697.png" /></p>
+<h3 id="nfm">NFM</h3>
+<p>$\hat{y} = sigmoid(y_{FM} + y_{DNN})$</p>
+<p><img alt="image-20190116232146228" src="../http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/FM算法汇总/image-20190116232146228.png" /></p>
+<p>$y = -1.509x_1 + 0.132x_2 + 4.807x_4 + 654.584$</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

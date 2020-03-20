@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="xinzhi">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>面试题总结 - 新志小站</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">新志小站</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../index.html">新志的个人小站</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">算法与数据结构 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">算法</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../xxx">动态规划</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">题目</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="LeetCode题目总结.html">LeetCode题目总结</a>
+</li>
+            
+<li >
+    <a href="剑指offer.html">剑指offer</a>
+</li>
+            
+<li class="active">
+    <a href="面试题总结.html">面试题总结</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">推荐系统 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../推荐系统/FM算法汇总.html">FM算法汇总</a>
+</li>
+                                    
+<li >
+    <a href="../推荐系统/深度学习召回模型.html">深度学习召回模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">自然语言处理 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../自然语言处理/BERT及ERNIE学习.html">预处理模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">机器学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">深度学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">强化学习</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">语言学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">C++</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/CPP笔记.html">C++笔记</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Python</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/Python笔记.html">Python笔记</a>
+</li>
+            
+<li >
+    <a href="../语言/Python高效编程.md">Python高效编程</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">设计模式</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../语言/设计模式.html">设计模式</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="../语言/多进程多线程.html">多进程多线程</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">常用工具 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../工具/如何构建自己的博客.html">如何构建自己的博客</a>
+</li>
+                                    
+<li >
+    <a href="../工具/常用Linux命令.html">常用Linux命令</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">读书笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../读书笔记/论美国的民主.md">论美国的民主</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">随笔记事</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">年度计划</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="剑指offer.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../推荐系统/FM算法汇总.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/spaceplayer/mkdocs_blog/blob/mkdocs_blog/docs/算法/面试题总结.md">Edit on spaceplayer/mkdocs_blog</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">面试题总结</a></li>
+            <li><a href="#todo">todo 背包九讲</a></li>
+            <li><a href="#_2">技巧</a></li>
+            <li><a href="#_4">腾讯暑期提前批</a></li>
+            <li><a href="#_11">头条笔试题</a></li>
+            <li><a href="#856">856. 变量名拆分</a></li>
+            <li><a href="#3">3</a></li>
+        <li class="main "><a href="#_14">头条笔试题</a></li>
+            <li><a href="#864">864. 二维数组区块计数</a></li>
+            <li><a href="#865">865. 字符串展开</a></li>
+        <li class="main "><a href="#19">滴滴19笔试题</a></li>
+            <li><a href="#eval">法一 插入排序 + eval</a></li>
+            <li><a href="#_15">法二</a></li>
+        <li class="main "><a href="#_16">腾讯笔试题</a></li>
+        <li class="main "><a href="#_17">微软第三题</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+        <li class="main "><a href="#_18">搜狗</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">面试题总结</h1>
+<h2 id="todo">todo 背包九讲</h2>
+<h2 id="_2">技巧</h2>
+<h3 id="_3">上取整变下取证</h3>
+<p><img alt="image-20190531214509798" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/面试题总结/image-20190531214509798.png" /></p>
+<h3 id="cnm-mod-p">组合数求模 C(n,m) mod p</h3>
+<h4 id="1n-mon2">1.杨辉三角法（n, m较小时）O(n^2)</h4>
+<p>C(n,m)=C(n-1,m)+C(n-1,m-1)；</p>
+<p>由于组合数满足以上性质，可以预先生成所有用到的组合数，使用时，直接查找即可。生成的复杂度为O(n^2)，查询复杂度为O(1)。较方案一而言，支持的数量级大有提升，在1秒内，基本能处理10000以内的组合数。算法的预处理时间较长，另外空间花费较大，都是平方级的，优点是实现简单，查询时间快。</p>
+<pre><code class="c++">const int M = 10007;
+const int MAXN = 1000;
+
+int C[MAXN+1][MAXN+1];
+
+// 初始化 O(n ** 2)
+void Initial(){
+    int i, j;
+    for(i = 0; i &lt;= MAXN; i++){
+        C[0][i] = 0;
+        C[i][0] = 1;
+    }
+    for(i = 1; i &lt;= MAXN; i++){
+        for(j = 1; j &lt;= MAXN; j++){
+            C[i][j] = (C[i-1][j] + C[i-1][j-1]) % M;
+        }
+    }
+}
+
+int Combination(int n, int m)
+{   
+    return C[n][m];
+}
+</code></pre>
+
+<h4 id="2todo-onlogn">2.[todo]利用乘法逆元 O(nlogn)</h4>
+<p>模逆元+整数欧几里得算法</p>
+<p>3.</p>
+<h2 id="_4">腾讯暑期提前批</h2>
+<h3 id="_5">硬币</h3>
+<pre><code>牛家村的货币是一种很神奇的连续货币。
+
+他们货币的最大面额是n，并且一共有面额为1，面额为2.....面额为n，n种面额的货币。
+
+牛牛每次购买商品都会带上所有面额的货币，支付时会选择给出硬币数量最小的方案。
+
+现在告诉你牛牛将要购买的商品的价格，你能算出牛牛支付的硬币数量吗？ (假设牛牛每种面额的货币都拥有无限个。)
+
+输入格式
+共一行，包含两个整数n和m，分别表示货币的最大面额以及商品的价格。
+
+输出格式
+一个整数表示牛牛支付的硬币数量。
+
+数据范围
+1≤n≤105,
+1≤m≤109
+输入样例1：
+6 7
+输出样例1：
+2
+输入样例2：
+4 10
+输出样例2：
+3
+</code></pre>
+
+<h4 id="_6">解法</h4>
+<p><img alt="image-20190531214509798" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/面试题总结/image-20190531214509798.png" /></p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int main(){
+    int n, m;
+    cin &gt;&gt; n &gt;&gt; m;
+    // (m + n - 1) / n
+    cout &lt;&lt; m / n + (int)(m % n &gt; 0) &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<h3 id="_7">奇妙的数列</h3>
+<pre><code>妞妞最近迷上了王者荣耀。
+
+小Q得到了一个奇妙的数列，这个数列有无限多项，数列中的第 i 个数字为i∗(−1)i，比如数列的前几项为-1，2，-3，4，-5…
+
+小Q兴奋把这个数列拿去给妞妞看，并希望借此邀请妞妞吃饭。
+
+妞妞想了想，对小Q说：“对于这个数列，我每次询问你一个区间，你在1秒内把这个区间里的数字的和告诉我，如果你答得上来我就跟你一起去吃饭。”
+
+由于妞妞最近沉迷王者荣耀，已经很久都没理过小Q了，所以小Q不想失去这次珍贵的机会，你能帮帮他吗？
+
+输入格式
+第一行，一个整数 q，表示妞妞的询问次数。
+
+接下来 q 行，每行两个整数 l 和 r，表示妞妞询问的区间的左端点和右端点。
+
+输出格式
+共 q 行，每行一个整数，表示妞妞询问的区间和。
+
+数据范围
+1≤q≤105,
+1≤l≤r≤109
+输入样例1：
+4
+2 4
+2 2
+3 3
+1 5
+输出样例1：
+3
+2
+-3
+-3
+输入样例2：
+1
+1 1000000000
+输出样例2：
+500000000
+</code></pre>
+
+<h4 id="_8">解法</h4>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int main(){
+    int q, l, r;
+    cin &gt;&gt; q;
+    for(int i = 1; i &lt;= q; i++){
+        cin &gt;&gt; l &gt;&gt; r;
+        int ans;
+        if((l &amp; 1) == 0){
+            if((r &amp; 1) == 1){
+                // 左偶右奇
+                ans = -1 * (r - l + 1) / 2;
+            }else{
+                // 左偶右偶
+                ans = r - (r - l) / 2;
+            }
+        }else{
+            if((r &amp; 1) == 1){
+                // 左奇右奇
+                ans = (r - l) / 2 - r;
+            }else{
+                ans = (r - l + 1) / 2;
+            }
+        }
+        cout &lt;&lt; ans &lt;&lt; endl;
+    }
+    return 0;
+}
+</code></pre>
+
+<h3 id="_9">猜拳游戏</h3>
+<pre><code>小Q和牛妹参加一个剪刀石头布的游戏，游戏用卡片来玩，每张卡片是剪刀，石头，布中的一种，每种类型的卡片有无限个。
+
+牛妹从中选了n张卡片排成一排，正面朝下，小Q也会选择n张卡片排成一排，然后小Q和牛妹的卡片会依次进行比对，第一张对第一张，第二张对第二张…
+
+如果小Q赢，小Q会得到一分，现在已知牛妹的每一张牌以及小Q最终的得分 s，请问小Q有多少种选择卡片的方案(多少不同的排列)
+
+输入格式
+第一行包含两个整数 n 和 s。
+
+第二行包含 n 个整数，表示牛妹的每张卡片，每个数在[0,2]之间，0代表石头，1代表布，2代表剪刀。
+
+输出格式
+输出一个整数，表示总方案数对109+7取模后的值。
+
+数据范围
+1≤n≤2000,
+0≤s≤2000
+输入样例：
+3 2
+0 1 2
+输出样例：
+6
+</code></pre>
+
+<h4 id="_10">解法</h4>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;math.h&gt;
+
+
+using namespace std;
+typedef long long ll;
+
+int main(){
+    int n, s;
+    cin &gt;&gt; n &gt;&gt; s;
+
+    ll ans = 1;
+
+    for(int i = n; i &gt; n - s; i--){
+        ans *= i;
+    }
+    for(int i = s; i &gt; 0; i--){
+        ans /= i;
+    }
+    cout &lt;&lt; ans * pow(2, (n - s)) &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
+<h2 id="_11">头条笔试题</h2>
+<h3 id="855">855. 立方体塔</h3>
+<pre><code>小方有w个白色立方体和b个黑色立方体，现在小方想把它们堆成一个立方体塔。
+
+一座高度为h的立方体塔，最底层有h个立方体，每往上一层，所需立方体减一，直到最高层只需要一个立方体。
+
+为了让这座塔看起来美观，小方希望，每一层都只能用一种颜色的立方体。
+
+小方希望把这座塔叠的尽可能高，因此他想知道塔的最大高度是多少，以及这个高度的立方体塔能有几种。
+
+两种立方体塔，当且仅当至少有一层的颜色是不同的，则被认为是不同的。
+
+输入格式
+共一行，包含两个整数w和b。
+
+输出格式
+共一行，包含两个整数h和c，分别表示最高塔的高度以及此高度塔的种类数。
+
+因为种类数可能较多，请将c对109+7取模后的值输出。
+
+数据范围
+0≤w,b≤105
+输入样例：
+1 1
+输出样例：
+1 2
+</code></pre>
+
+<h4 id="_12">思路</h4>
+<pre><code>1.假设不考虑颜色，h的理论上限由 w + b 决定
+    h * (h + 1) / 2 &lt;= w + b
+
+2.假设实际选取 a白块 b黑块 a + b = h * (h + 1) / 2，由数学归纳法得出任何一个a可由 0...h的某几个凑出
+【如n = h - 1可凑出 0 ～ 1 + ... (h - 1), 可证 n = h时 可凑出 0 ～ 1 + ... + h】(乘法原理)
+
+3.假设a确定时，由多少种组合可以凑成a (乘法原理 01背包)
+
+4.a有多少种选取情况(加法原理)
+
+5.第3点可用01背包解决
+    dp[i, j] 所有只考虑前i个物品时总体积为j的方案数
+    dp[i, j] = dp[i - 1, j - v[i]] + dp[i - 1, j]  （包含第i个物品和不包含第i个物品的方案数）
+    i由i-1递推， 可以用for从小到大迭代，且v[i]在本题就是i，可简化成一维表示
+    dp[j] = dp[j - i] + dp[j]
+</code></pre>
+
+<p><img alt="image-20190611085837473" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/面试题总结/image-20190611085837473.png" /></p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 100010, mod = 1e9 + 7;
+
+int f[N];
+
+int main()
+{
+    int n, m;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+
+    int h = 1;
+    while (h * (h + 1) / 2 &lt;= n + m) h ++ ;
+    h -- ;
+
+    f[0] = 1;
+    for (int i = 1; i &lt;= h; i ++ )
+        for (int j = n; j &gt;= i; j -- )
+            f[j] = (f[j] + f[j - i]) % mod;
+
+    int res = 0;
+    for (int i = 0; i &lt;= n; i ++ )
+        if (h * (h + 1) / 2 - i &lt;= m)
+            res = (res + f[i]) % mod;
+
+    printf(&quot;%d %d\n&quot;, h, res);
+
+    return 0;
+}
+
+</code></pre>
+
+<h2 id="856">856. 变量名拆分</h2>
+<pre><code>有一天，小赵正在愉快的敲代码，小钱说：“小赵，你这个变量的名字取的可读性不行啊，我都不知道哪里到哪里代表什么意思。”
+
+小赵不服气的说：“那你给我一组变量名，我保证我的变量名可以拆开，并且拆开的每一个变量名都在你这组变量名中出现”。
+
+现在小钱提供了一组不含重复变量名的列表，你能判断小赵的变量名是否能够拆分为多个小钱提供的变量名吗，能则输出True，不能则输出False。
+
+说明：可以重复使用小钱提供的变量名，输入变量名长度均不超过10000，变量名个数不超过10000，所有变量名总字符长度不超过106。
+
+输入格式
+第一行输入待拆分的变量名，第二行输入多个变量名，用空格隔开。
+
+输出格式
+根据能不能拆分输出True或False。
+
+输入样例：
+thisisadog
+this thisis is a dog
+输出样例：
+True
+</code></pre>
+
+<h3 id="_13">思路</h3>
+<p>DP模型 + <strong>预处理字符串Hash化O(1) 一般的string set是O(n)的一定要遍历一遍字符串的</strong></p>
+<p>状态表示 f(i) 表示前i个字母能否成功拆分</p>
+<p>10000个变量名长度 从i往回枚举 1 + … + 10000 = 50000000</p>
+<p>c++最高1s 1e7 - 1e8 所以每个字符串是否是单词 O(1)</p>
+<p>字符串Hash法 —》 0 - Q-1</p>
+<p>经验取值 p: 131 13331 Q: 2**64 unsigned long long 溢出相当于模上 2**64</p>
+<p><img alt="image-20190610210230425" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/面试题总结/image-20190610210230425.png" /></p>
+<h2 id="3">3</h2>
+<p>一个随机的二叉查找的期望高度 logn</p>
+<h1 id="_14">头条笔试题</h1>
+<h2 id="864">864. 二维数组区块计数</h2>
+<pre><code>输入一个只包含0和1的二维数组，上下左右和对角相邻的1组成一个区块，0不形成区块，求数组中的区块个数。
+
+输入格式
+第一行输入两个正整数N和M，N表示数组行数，M表示数组列数。
+
+接下来N行，每行表示数组对应的一行，每行包含M个整数，整数之间用空格隔开。
+
+输出格式
+输出一个整数，表示数组中区块的个数。
+
+数据范围
+0≤N,M,N∗M≤106
+输入样例：
+3 3
+0 1 0
+1 0 0
+1 0 1
+输出样例：
+2
+样例解释
+数组右下角的1单独构成一个区块，其他的3个1对角或上下相邻，构成另一个区块。
+</code></pre>
+
+<p>由于二维数组要确定的数组大小，难以确定，可用一维数组替换</p>
+<p>a[i][j] == a[i *m + j]</p>
+<p>思路1:遍历 找到一个1， 把所有相连的1变为0 使用bfs （dfs容易爆栈 c++栈1M左右 java与python没关系）</p>
+<p>思路2:遍历 遇到一个 判断 左上 上 右上 左</p>
+<h2 id="865">865. 字符串展开</h2>
+<pre><code>小赵和小钱在练字，小钱对小赵说：你知道吗，我练习的字是有蕴含的。
+
+小赵不服气了，凭什么你的就有蕴含呢？
+
+小钱说，你所看到的并不是我真正练习的字，你需要将我现在写下的字符串里面“%”和“#”之间的字重复符号前的那么多倍，才能看到我真正写的是什么。
+
+你能帮帮小赵吗？
+
+说明：可能存在嵌套的情况，如“3%g2%n##”，返回“gnngnngnn”，输入输出的字符串长度都不超过10000。
+
+输入字符串保证合法，且输出的字符串中只包含大小写英文字母。
+
+输入格式
+一行带数字和嵌套括号的字符串。
+
+输出格式
+展开的字符串。
+
+输入样例：
+3%acm#2%acm#
+输出样例：
+acmacmacmacmacm
+</code></pre>
+
+<p>思想1: 递归</p>
+<p>思想2: 从后向前遍历</p>
+<h1 id="19">滴滴19笔试题</h1>
+<p><img alt="image-20190827214400368" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/面试题总结/image-20190827214400368.png" /></p>
+<h3 id="eval">法一 插入排序 + eval</h3>
+<pre><code class="python">n = int(input())
+s = list(input().split(&quot; &quot;))
+for i in range(len(s)):
+    if s[i] in ['+','-','*','/']:
+        new_s = s[:]
+        for j in range(i, 0, -2):
+            if int(new_s[j + 1]) &gt; int(new_s[j - 1]):
+                break
+            t=new_s[j+1]
+            new_s[j+1]=new_s[j-1]
+            new_s[j-1]=t
+            if eval(&quot;&quot;.join(new_s)) == eval(&quot;&quot;.join(s)):
+                s = new_s[:]
+            else:
+                break
+print(&quot; &quot;.join(s))
+</code></pre>
+
+<h3 id="_15">法二</h3>
+<p>找出待排序的加法 减法 乘法 除法</p>
+<p>减法 除法 被除数可以交换</p>
+<h1 id="_16">腾讯笔试题</h1>
+<h1 id="_17">微软第三题</h1>
+<h2 id="problem">Problem</h2>
+<p>Check if a positive integer 𝑛n can be written as sum of a positive integer and reverse of that integer.
+Here, reverse of a positive integer is defined as the integer obtained by reversing the decimal representation of that integer.</p>
+<p>For example, 121 = 92 + 29.</p>
+<h2 id="analysis">Analysis</h2>
+<p>若 𝑥=𝑦+𝑟(𝑦)x=y+r(y)，其中 𝑟(𝑦):=reverse of 𝑦r(y):=reverse of y，则可以确定 𝑦y 是几位数。</p>
+<p>若 𝑥x 的最高位上的数字大于 11，则 𝑦y 与 𝑥x 位数相同。
+若 𝑥x 的最高位上的数字等于 11，则 𝑥x 的最高位可能是 𝑦+𝑟(𝑦)y+r(y) 进位导致的，于是有两种可能</p>
+<ol>
+<li>𝑦y 与 𝑥x 位数相同</li>
+<li>𝑦y 比 𝑥x 少一位</li>
+</ol>
+<p>此时，我们可以分别讨论这两种情况。确定了 𝑦y 的位数，进一步可以确定符合条件的 𝑦y 是否存在。我们只需要判断，在<strong>不进位</strong>的情况下，𝑥x 是否是回文串，特别的，当 𝑦y 的长度是奇数时，中间的那一位上必须是偶数。</p>
+<pre><code class="c++">// x = y + reverse(y)
+// y 有 d.size() 位
+bool check(vector&lt;int&gt; d) {
+    for (int i = 0, j = (int)d.size() - 1; i &lt; j; ++i, --j) {
+        // case 1: d[i] == d[j]
+        // case 2: d[i] == d[j] + 10
+        // case 2: d[i] - 1 == d[j]
+        // case 3: d[i] - 1 == d[j] + 10
+        if (d[i] == d[j]) continue;
+        if (d[i] == d[j] + 10) d[j - 1] -= 1;
+        else if (d[i] - 1 == d[j]) {
+            d[i + 1] += 10;
+        }
+        else if (d[i] - 1 == d[j] + 10) {
+            d[i + 1] += 10;
+            d[j - 1] -= 1;
+        }
+        else {
+            return false;
+        }
+    }
+    if (d.size() &amp; 1) {
+        int t = d[d.size() / 2];
+        return t % 2 == 0 &amp;&amp; t &gt;= 0 &amp;&amp; t &lt;= 18;
+    }
+    return true;
+}
+
+bool solve(const char* s) {
+    vector&lt;int&gt; d;
+    for (int i = 0; s[i]; ++i) {
+        d.push_back(s[i] - '0');
+    }
+    bool res = check(d);
+    if (d.front() == 1 &amp;&amp; d.size() &gt; 1) {
+        d[1] += 10;
+        d.erase(d.begin());
+        res |= check(d);
+    }
+    return res;
+}
+</code></pre>
+
+<h1 id="_18">搜狗</h1>
+<p>11个排序数组，找其中最小的300个数。</p>
+<p>最优解是lg(11)*300。你用一个带坐标的最小堆，可以在lg(11)中得到最小值的坐标。然后更新坐标，并放新值入堆。</p>
+<pre><code class="python">def sort(lists, k=300):
+    n = len(lists)
+    ans = []
+    heap = [(lists[i][0], i) for i in range(n)]
+    idx = {i: 1 for i in range(n)}
+    heapq.heapify(heap)
+    for _ in range(k):
+        val, i = heapq.heappop(heap)
+        ans.append(val)
+        heapq.heappush(heap, (lists[i][idx[i]], i))
+        idx[i] += 1
+
+    return ans
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="xinzhi">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>C++笔记 - 新志小站</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">新志小站</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">首页 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../index.html">新志的个人小站</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">算法与数据结构 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">算法</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../xxx">动态规划</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">题目</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../算法/LeetCode题目总结.html">LeetCode题目总结</a>
+</li>
+            
+<li >
+    <a href="../算法/剑指offer.html">剑指offer</a>
+</li>
+            
+<li >
+    <a href="../算法/面试题总结.html">面试题总结</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">推荐系统 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../推荐系统/FM算法汇总.html">FM算法汇总</a>
+</li>
+                                    
+<li >
+    <a href="../推荐系统/深度学习召回模型.html">深度学习召回模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">自然语言处理 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../自然语言处理/BERT及ERNIE学习.html">预处理模型</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">机器学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">深度学习</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">强化学习</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">语言学习 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">C++</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="CPP笔记.html">C++笔记</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Python</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="Python笔记.html">Python笔记</a>
+</li>
+            
+<li >
+    <a href="Python高效编程.md">Python高效编程</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">设计模式</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="设计模式.html">设计模式</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li >
+    <a href="多进程多线程.html">多进程多线程</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">常用工具 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../工具/如何构建自己的博客.html">如何构建自己的博客</a>
+</li>
+                                    
+<li >
+    <a href="../工具/常用Linux命令.html">常用Linux命令</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">读书笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../读书笔记/论美国的民主.md">论美国的民主</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../xxx">随笔记事</a>
+                            </li>
+                            <li >
+                                <a href="../xxx">年度计划</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../自然语言处理/BERT及ERNIE学习.html">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="Python笔记.html">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/spaceplayer/mkdocs_blog/blob/mkdocs_blog/docs/语言/CPP笔记.md">Edit on spaceplayer/mkdocs_blog</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#1">1.概述</a></li>
+            <li><a href="#cpp">CPP的类别</a></li>
+            <li><a href="#cpp_1">CPP标准</a></li>
+            <li><a href="#cpp_2">CPP书籍推荐</a></li>
+        <li class="main "><a href="#2">2.头文件与类的声明</a></li>
+        <li class="main "><a href="#3">3.构造函数</a></li>
+        <li class="main "><a href="#4">4.参数传递与返回值</a></li>
+        <li class="main "><a href="#5">5.操作符重载与临时对象</a></li>
+        <li class="main "><a href="#6complex">6.复习Complex类的实现过程</a></li>
+        <li class="main "><a href="#7">7.三大函数: 拷贝构造, 拷贝复制, 析构</a></li>
+        <li class="main "><a href="#8">8.堆栈与内存管理</a></li>
+        <li class="main "><a href="#10">10.扩展补充: 类模板,函数模板及其它</a></li>
+        <li class="main "><a href="#11">11.组合与继承</a></li>
+        <li class="main "><a href="#12">12.虚函数与多态</a></li>
+        <li class="main "><a href="#13">13.委托相关设计</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="1">1.概述</h1>
+<h3 id="cpp">CPP的类别</h3>
+<p>基于对象 单一class设计</p>
+<ul>
+<li>class without pointer members e.g.:complex class</li>
+<li>class with pointer members e.g.:string class</li>
+</ul>
+<p>面向对象 多重class设计</p>
+<ul>
+<li>继承</li>
+<li>复合</li>
+<li>委托</li>
+</ul>
+<h3 id="cpp_1">CPP标准</h3>
+<p>CPP 语言 + CPP标准库</p>
+<h3 id="cpp_2">CPP书籍推荐</h3>
+<p>CPP primer</p>
+<p>CPP PROGRAMMING LANGUAGE</p>
+<p>Effective CPP</p>
+<p>THE CPP STANDARD LIBRARY</p>
+<p>STL源码解析</p>
+<h1 id="2">2.头文件与类的声明</h1>
+<p><img alt="image-20191201151809583" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201151809583.png" /></p>
+<p><img alt="image-20191201151903434" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201151903434.png" /></p>
+<p><img alt="image-20191201152046869" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201152046869.png" /></p>
+<p><img alt="image-20191201152027067" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201152027067.png" /></p>
+<p><img alt="image-20191201152200254" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201152200254.png" /></p>
+<p><img alt="image-20191201152311295" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201152311295.png" /></p>
+<p><img alt="image-20191201152523934" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201152523934.png" /></p>
+<pre><code class="c++">template&lt;typename T&gt;
+class complex
+{
+public:
+    complex (T r = 0, T i = 0)
+        : re(r), im(i)
+    {}
+    complex&amp; operator += (const complex&amp;);
+    T real () const { return re; }
+    T imag () const { return im; }
+private:
+    T re, im;
+
+    friend complex&amp; __doapl (complex*, const complex&amp;);
+};
+{
+    complex&lt;double&gt; c1(2, 1);
+    complex&lt;int&gt; c2;
+}
+</code></pre>
+
+<p><img alt="image-20191201153042165" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201153042165.png" /></p>
+<h1 id="3">3.构造函数</h1>
+<p><img alt="image-20191201154940022" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201154940022.png" /></p>
+<p>inline函数更快, 但并不是在class中定义函数就一定会inline, 编译器会把简单的函数inline</p>
+<p><img alt="image-20191201155400977" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201155400977.png" /></p>
+<p><img alt="image-20191201155951454" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201155951454.png" /></p>
+<p><img alt="image-20191201161209694" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201161209694.png" /></p>
+<p>上面 1 2效果一样 不允许同时存在</p>
+<p><img alt="image-20191201161901586" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201161901586.png" /></p>
+<p><img alt="image-20191201162612078" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201162612078.png" /></p>
+<h1 id="4">4.参数传递与返回值</h1>
+<p><img alt="image-20191201162911667" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201162911667.png" /></p>
+<p><img alt="image-20191201163027302" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201163027302.png" /></p>
+<p><img alt="image-20191201164020532" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201164020532.png" /></p>
+<p>无论传入还是返回尽可能的用by reference</p>
+<p><img alt="image-20191201164208916" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201164208916.png" /></p>
+<p>friend 代表着这个函数里面可以直接利用private的数据 少用friend 破坏封装性</p>
+<p>有时需要定义一些函数，这些函数不是类的一部分，但又需要频繁地访问类的数据成员，这时可以将这些函数定义为该函数的友元函数。</p>
+<p>友元函数是可以直接访问类的私有成员的非成员函数。它是定义在类外的普通函数，它不属于任何类，但需要在类的定义中加以声明，声明时只需在友元的名称前加上关键字friend</p>
+<p><img alt="image-20191201164608963" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201164608963.png" /></p>
+<p><img alt="image-20191201164823874" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201164823874.png" /></p>
+<h1 id="5">5.操作符重载与临时对象</h1>
+<p><img alt="image-20191201165345773" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201165345773.png" /></p>
+<p><img alt="image-20191201170017840" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201170017840.png" /></p>
+<p>连串的赋值还需要做更多的处理</p>
+<p><img alt="image-20191201170627251" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201170627251.png" /></p>
+<p><img alt="image-20191201170700957" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201170700957.png" /></p>
+<p><img alt="image-20191201170944009" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201170944009.png" /></p>
+<p>临时对象 直接 complex(a, b) 在之后不被使用</p>
+<p><img alt="image-20191201171429846" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201171429846.png" /></p>
+<p><img alt="image-20191201171644508" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191201171644508.png" /></p>
+<p><img alt="image-20191202105632243" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202105632243.png" /></p>
+<h1 id="6complex">6.复习Complex类的实现过程</h1>
+<h1 id="7">7.三大函数: 拷贝构造, 拷贝复制, 析构</h1>
+<p><img alt="image-20191202211459695" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202211459695.png" /></p>
+<p>默认的 "=" 是浅拷, 带指针的class要自己定义这个operator</p>
+<p><img alt="image-20191202213755462" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202213755462.png" /></p>
+<p>3个特殊函数
+第一个是特殊的构造函数(接收的是自己, ) 叫做拷贝构造
+第二个是拷贝赋值函数(只要是带指针的class一定要重写这个函数)
+第3个是析构函数(类名前加~ 这个对象销毁时执行的函数)</p>
+<p><img alt="image-20191202214117261" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202214117261.png" /></p>
+<p><img alt="image-20191202215108261" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202215108261.png" /><img alt="image-20191202215121749" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP 笔记/image-20191202215121749.png" /><img alt="image-20191202215252860" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP 笔记/image-20191202215252860.png" /></p>
+<p><img alt="image-20191202220018944" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202220018944.png" /></p>
+<p><img alt="image-20191202225221344" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191202225221344.png" /></p>
+<h1 id="8">8.堆栈与内存管理</h1>
+<p><img alt="image-20191203204317400" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203204317400.png" /></p>
+<p><img alt="image-20191203204536793" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203204536793.png" /></p>
+<p><img alt="image-20191203204821369" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203204821369.png" /></p>
+<p><img alt="image-20191203204854007" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203204854007.png" /></p>
+<p><img alt="image-20191203205113830" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203205113830.png" /></p>
+<p><img alt="image-20191203213742591" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203213742591.png" /></p>
+<p><img alt="image-20191203214920744" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203214920744.png" /></p>
+<p>第一个是debug模式 第二个是非调试模式</p>
+<p>实际cPP的基本类型的内存不同于老师所讲</p>
+<p><img alt="image-20191203214435613" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203214435613.png" /></p>
+<p>指针类型占用8bytes</p>
+<p><img alt="image-20191203220537223" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20191203220537223.png" /></p>
+<h1 id="10">10.扩展补充: 类模板,函数模板及其它</h1>
+<p><img alt="image-20200105092814839" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105092814839.png" /></p>
+<p><img alt="image-20200105093228936" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105093228936.png" /></p>
+<p><img alt="image-20200105093418389" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105093418389.png" /></p>
+<p><img alt="image-20200105093524497" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105093524497.png" /></p>
+<p><img alt="image-20200105093709301" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105093709301.png" /></p>
+<p><img alt="image-20200105094153636" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105094153636.png" /></p>
+<p><img alt="image-20200105095514267" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105095514267.png" /></p>
+<p><img alt="image-20200105101600619" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105101600619.png" /><img alt="image-20200105101646909" src="http://spaceplayer.oss-cn-beijing.aliyuncs.com/spaceplayer/typora_img/CPP笔记/image-20200105101646909.png" /></p>
+<p>adapter设计模式</p>
+<h1 id="11">11.组合与继承</h1>
+<h1 id="12">12.虚函数与多态</h1>
+<h1 id="13">13.委托相关设计</h1></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
